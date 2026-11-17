@@ -1,0 +1,29 @@
+{
+  "shiftTicks": 12000,
+  "searchCostTicks": 900,
+  "strikeMax": 3,
+  "feeMin": 8,
+  "feeMax": 20,
+  "pinBonusCents": 3,
+  "cleanBonusPerShipCents": 50,
+  "maxChapters": 6,
+  "lawfulTrades": ["timber", "grain", "fish", "cloth", "ore", "faith"],
+  "sealHands": { "crown": 2, "guild": 1, "church": 2 },
+  "tideHalfWidthTicks": 450,
+  "tideForgeDelayTicks": 1500,
+  "massJitterPct": 0.12,
+  "tarpChance": 0.3,
+  "ranks": [
+    { "title": "Clerk", "feeThreshold": 0, "tools": ["magnifier"], "ships": 6, "forgedTiers": [1, 1] },
+    { "title": "Inspector", "feeThreshold": 300, "tools": ["magnifier", "scale"], "ships": 6, "forgedTiers": [1, 2, 2] },
+    { "title": "Senior Inspector", "feeThreshold": 900, "tools": ["magnifier", "scale", "reagent"], "ships": 6, "forgedTiers": [1, 2, 3] },
+    { "title": "Harbor Master", "feeThreshold": 2000, "tools": ["magnifier", "scale", "reagent", "lamp"], "ships": 7, "forgedTiers": [1, 2, 2, 3] }
+  ],
+  "events": [
+    { "id": "audit", "faction": "crown", "below": -20, "text": "Royal audit: the Crown halves your fees for the rest of this shift.", "feeMul": 0.5 },
+    { "id": "guildBoon", "faction": "guild", "above": 40, "text": "The Guild favours your fair ledger: fees +25% for the rest of this shift.", "feeMul": 1.25 },
+    { "id": "bribe", "faction": "smugglers", "above": 40, "text": "A stranger leaves a heavy purse on your desk. You do not touch it. The underworld takes note.", "feeMul": 1 },
+    { "id": "sanctuary", "faction": "church", "below": -20, "text": "Sanctuary pleas go unanswered at your desk. The Church marks the ledger.", "feeMul": 1 }
+  ],
+  "ports": ["Inkline Quay", "Greyharbour", "Saltmoor", "Vellum Reach"]
+}

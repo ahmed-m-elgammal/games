@@ -1,15 +1,15 @@
 {
-  "name": "moonpetal",
+  "name": "inkline-customs",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
-  "description": "Moonpetal - a cozy bedtime merge-garden game. Wind down, grow a night garden, meet soft creatures.",
+  "description": "Inkline Customs - a deduction x inspection sim at an ink-drawn port. Every ship lies. The ink tells the truth.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "icons": "python3 scripts/make_icons.py"
+    "check:layers": "node scripts/check-layers.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

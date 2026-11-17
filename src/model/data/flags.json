@@ -1,0 +1,8 @@
+[
+  { "id": "crown", "name": "Crown Ensign", "color": "#4E7A3A", "code": "CRN" },
+  { "id": "guild", "name": "Guild Pennant", "color": "#C77B2B", "code": "GLD" },
+  { "id": "free", "name": "Free Quay Flag", "color": "#EFE8DA", "code": "FRQ" },
+  { "id": "north", "name": "Northmark Jack", "color": "#4A6FA5", "code": "NMK" },
+  { "id": "south", "name": "Southreach Flag", "color": "#B04A7D", "code": "STR" },
+  { "id": "redwater", "name": "Redwater Ensign", "color": "#B3372F", "code": "RDW", "embargoed": true }
+]

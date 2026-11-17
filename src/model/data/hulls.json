@@ -1,0 +1,74 @@
+{
+  "cog": {
+    "name": "Cog",
+    "masts": [1, 1],
+    "bows": ["round"],
+    "length": 120,
+    "railHeight": 34,
+    "holdSlots": 3,
+    "minChapters": 1,
+    "sail": "lateen",
+    "smoke": false,
+    "outline": [[0.05, 0.0], [0.04, 0.45], [0.12, 0.8], [0.32, 0.98], [0.55, 1.0], [0.74, 0.93], [0.88, 0.62]]
+  },
+  "ferry": {
+    "name": "Ferry",
+    "masts": [1, 2],
+    "bows": ["round", "square"],
+    "length": 130,
+    "railHeight": 26,
+    "holdSlots": 4,
+    "minChapters": 2,
+    "sail": "lateen",
+    "smoke": true,
+    "outline": [[0.04, 0.0], [0.03, 0.35], [0.1, 0.72], [0.3, 0.92], [0.55, 0.95], [0.75, 0.88], [0.88, 0.55]]
+  },
+  "barque": {
+    "name": "Barque",
+    "masts": [2, 3],
+    "bows": ["clipper", "round"],
+    "length": 150,
+    "railHeight": 30,
+    "holdSlots": 5,
+    "minChapters": 3,
+    "sail": "square",
+    "smoke": false,
+    "outline": [[0.05, 0.0], [0.04, 0.4], [0.1, 0.72], [0.3, 0.93], [0.55, 0.97], [0.78, 0.88], [0.9, 0.55]]
+  },
+  "warship": {
+    "name": "Warship",
+    "masts": [2, 3],
+    "bows": ["square", "clipper"],
+    "length": 160,
+    "railHeight": 36,
+    "holdSlots": 4,
+    "minChapters": 4,
+    "sail": "square",
+    "smoke": false,
+    "outline": [[0.05, 0.0], [0.04, 0.5], [0.12, 0.85], [0.32, 1.0], [0.55, 1.0], [0.76, 0.9], [0.9, 0.6]]
+  },
+  "freighter": {
+    "name": "Freighter",
+    "masts": [1, 2],
+    "bows": ["square"],
+    "length": 170,
+    "railHeight": 24,
+    "holdSlots": 6,
+    "minChapters": 5,
+    "sail": "lateen",
+    "smoke": true,
+    "outline": [[0.04, 0.0], [0.03, 0.3], [0.1, 0.62], [0.3, 0.8], [0.55, 0.82], [0.76, 0.74], [0.88, 0.45]]
+  },
+  "hulk": {
+    "name": "Plague Hulk",
+    "masts": [1, 1],
+    "bows": ["round"],
+    "length": 110,
+    "railHeight": 38,
+    "holdSlots": 3,
+    "minChapters": 6,
+    "sail": "lateen",
+    "smoke": false,
+    "outline": [[0.06, 0.0], [0.05, 0.52], [0.14, 0.9], [0.36, 1.0], [0.6, 1.0], [0.78, 0.92], [0.89, 0.6]]
+  }
+}

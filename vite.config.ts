@@ -1,16 +1,11 @@
-/// <reference types="vitest" />
-import { defineConfig } from 'vite';
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  // relative base so the build works on GitHub Pages subpaths and any static host
-  base: './',
-  build: {
-    target: 'es2020',
-    outDir: 'dist',
-    assetsInlineLimit: 0
-  },
+  base: "./",
+  build: { target: "es2022" },
+  css: { postcss: { plugins: [] } }, // isolate from ancestor PostCSS configs
   test: {
-    environment: 'node',
-    include: ['tests/**/*.test.ts']
+    environment: "node",
+    include: ["test/**/*.test.ts"]
   }
 });

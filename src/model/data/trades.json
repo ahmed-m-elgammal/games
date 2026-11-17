@@ -1,0 +1,9 @@
+[
+  { "id": "timber", "name": "Timber", "color": "#C77B2B", "pattern": "rings", "unitMassKg": 60 },
+  { "id": "grain", "name": "Grain", "color": "#D9A62E", "pattern": "dots", "unitMassKg": 25 },
+  { "id": "fish", "name": "Fish", "color": "#2E7F86", "pattern": "wave", "unitMassKg": 14 },
+  { "id": "cloth", "name": "Cloth", "color": "#B04A7D", "pattern": "cross", "unitMassKg": 8 },
+  { "id": "ore", "name": "Ore", "color": "#4A6FA5", "pattern": "diagonal", "unitMassKg": 90 },
+  { "id": "faith", "name": "Faith", "color": "#6B4E9B", "pattern": "chevron", "unitMassKg": 5 },
+  { "id": "contraband", "name": "Contraband", "color": "#B3372F", "pattern": "none", "unitMassKg": 30 }
+]
