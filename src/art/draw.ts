@@ -2,10 +2,14 @@
 export type Ctx = CanvasRenderingContext2D;
 
 export function rgba(hex: string, a: number): string {
-  const h = hex.replace('#', '');
-  const r = parseInt(h.slice(0, 2), 16);
-  const g = parseInt(h.slice(2, 4), 16);
-  const b = parseInt(h.slice(4, 6), 16);
+  let h = hex.replace('#', '');
+  // expand shorthand #rgb / #rgba forms
+  if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+  else if (h.length === 4) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+  else if (h.length === 8) h = h.slice(0, 6);
+  const r = parseInt(h.slice(0, 2), 16) || 0;
+  const g = parseInt(h.slice(2, 4), 16) || 0;
+  const b = parseInt(h.slice(4, 6), 16) || 0;
   return `rgba(${r},${g},${b},${a})`;
 }
 
@@ -40,8 +44,12 @@ export function darken(hex: string, amt: number): string {
   return mix(hex, '#0a0820', amt);
 }
 export function mix(a: string, b: string, t: number): string {
-  const pa = parseInt(a.replace('#', ''), 16);
-  const pb = parseInt(b.replace('#', ''), 16);
+  let ha = a.replace('#', '');
+  if (ha.length === 3) ha = ha[0] + ha[0] + ha[1] + ha[1] + ha[2] + ha[2];
+  let hb = b.replace('#', '');
+  if (hb.length === 3) hb = hb[0] + hb[0] + hb[1] + hb[1] + hb[2] + hb[2];
+  const pa = parseInt(ha, 16) || 0;
+  const pb = parseInt(hb, 16) || 0;
   const ar = (pa >> 16) & 255, ag = (pa >> 8) & 255, ab = pa & 255;
   const br = (pb >> 16) & 255, bg = (pb >> 8) & 255, bb = pb & 255;
   const r = Math.round(ar + (br - ar) * t);
