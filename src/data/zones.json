@@ -1,0 +1,57 @@
+[
+  {
+    "id": "moonlit-glade",
+    "name": "Moonlit Glade",
+    "tagline": "Where the first petals learn to glow.",
+    "need": 0,
+    "plots": 6,
+    "ground": "#2c2058",
+    "ground2": "#3a2c6e",
+    "flora": "#8f7bff",
+    "flora2": "#b9a7ff"
+  },
+  {
+    "id": "fern-hollow",
+    "name": "Fern Hollow",
+    "tagline": "Soft ferns keep every secret whispered to them.",
+    "need": 300,
+    "plots": 6,
+    "ground": "#1e3d4a",
+    "ground2": "#2a5560",
+    "flora": "#6fe3c1",
+    "flora2": "#8ff0d8"
+  },
+  {
+    "id": "starfall-bank",
+    "name": "Starfall Bank",
+    "tagline": "Fallen stars nap here between journeys.",
+    "need": 800,
+    "plots": 6,
+    "ground": "#232a5e",
+    "ground2": "#31386e",
+    "flora": "#ffd76e",
+    "flora2": "#ffe9a8"
+  },
+  {
+    "id": "cloud-meadow",
+    "name": "Cloud Meadow",
+    "tagline": "A meadow stitched from yesterday's dreams.",
+    "need": 1600,
+    "plots": 6,
+    "ground": "#3a3268",
+    "ground2": "#514780",
+    "flora": "#ffc9d8",
+    "flora2": "#ffe1ea"
+  },
+  {
+    "id": "deep-night",
+    "name": "The Deep Night",
+    "tagline": "The quietest room in the world.",
+    "need": 2600,
+    "plots": 6,
+    "ground": "#171040",
+    "ground2": "#221a55",
+    "flora": "#9fb4ff",
+    "flora2": "#cfd8ff"
+  }
+]

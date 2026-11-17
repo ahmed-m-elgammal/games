@@ -1,0 +1,19 @@
+{
+  "name": "moonpetal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Moonpetal - a cozy bedtime merge-garden game. Wind down, grow a night garden, meet soft creatures.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "icons": "python3 scripts/make_icons.py"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
